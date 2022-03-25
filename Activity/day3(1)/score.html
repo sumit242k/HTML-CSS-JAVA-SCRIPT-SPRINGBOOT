@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>cricket</title>
+<head></head>
+<script>
+function win(){
+var f_input=document.getElementById("name1").value;
+console.log(f_input);
+var s_input=document.getElementById("name2").value;
+console.log(s_input);
+if(f_input==s_input)
+{
+alert('invalid input');
+}
+var input1=document.getElementById("score1").value;
+console.log(input1);
+var input2=document.getElementById("score2").value;
+console.log(input2);
+if(input1<input2){document.getElementById("result").innerHTML="Team 2 wins";
+return false;
+}
+else if(input1>input2){document.getElementById("result").innerHTML="Team 1 wins";
+return false;
+}
+else if(input1==input2){document.getElementById("result").innerHTML="Draw";
+return false;
+}
+}
+</script>
+<body>
+<form onsubmit ="return win()">
+<div style="float:left; height:auto; width:49%; text-align:right">
+Enter the Team name 1<br>
+<input type="text" id="name1" autofocus required><p>
+Enter the Team name 2<br>
+<input type="text" id="name2" autofocus required></div>
+<div style="float:right; height:auto; width:49%; text-align:left">
+Score 1 <br>
+<input type="number" id="score1" required><p>
+Score 2<br>
+<input type="number" id="score2" required>
+</div>
+<p>
+<div style="text-align:center">
+<input type="submit" id="submitid"><br>
+<span id="result" style="color:green"></span>
+</div>
+</body>
+</html>
