@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.heading{font-style:italic; color:#708090}
+</style>
+</head>
+<title>auction</title>
+<body>
+<form action="submitted.html">
+    <label for="achieve">Achievements</label>
+<div style="background-color:blue;border:2px;height:70px;text-align:center"><h2 style="color:white;">Player Details</h2></div>
+<p>
+<div class="heading" style="background-color:#87CEEB;"><table style="width:100%"><tr><td style="text-align:right">Name<font color="red">*</td><td> <input type="text" id="name" autofocus required></td></tr>
+<tr><td style="text-align:right">DOB<font color="red">* </td><td><input type="date" id="dob" pattern="\d{1,2}/\d{1,2}/\{4}" required></td></tr>
+<tr><td style="text-align:right">Age<font color="red">*</td><td><input type="number" id="age" required></td></tr>
+<tr><td style="text-align:right">Email Id<font color="red">*</td><td><input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required"></td></tr>
+<tr><td style="text-align:right">Country<font color="red">*</td><td><select required>
+<option>India</option>
+<option>Australia</option>
+<option>Others</option>
+</select></td></tr>
+<tr><td style="text-align:right">Skill<font color="red">*</td><td><input type="checkbox" id="skill">
+<label style="color:black"> Batting</label>
+<input type="checkbox" id="skill">
+<label style="color:black"> Bowling</label></td></tr>
+<tr><td style="text-align:right">Bat Style</td><td><input type="radio" name="bat">
+<label style="color:black"> Right handed</label>
+<input type="radio" name="bat">
+<label style="color:black"> Left handed</label></td></tr>
+<tr><td style="text-align:right">Bowl Style</td><td><input type="radio" name="bowl">
+<label style="color:black"> Batting</label>
+<input type="radio" name="bowl">
+<label style="color:black"> Bowling</label></td></tr>
+<tr><td style="text-align:right">Matches<font color="red">*</td><td><input type="number" id="match" required></td></tr>
+<tr><td style="text-align:right">Runs<font color="red">*</td><td><input type="number" id="run" required></td></tr>
+<tr><td style="text-align:right">Wickets<font color="red">*</td><td><input type="number" id="wicket" required></td></tr>
+<tr><td style="text-align:right">Achievements</td><td><textarea id="achieve" rows="4"></textarea></td></tr></table>
+</div>
+<p>
+<div style="background-color:blue;border:2px;height:70px;text-align:center">
+<input type="submit" id="submitid"><input type="reset" id="resetid">
+</div>
+</form>
+</body>
+</html>
